@@ -1,0 +1,298 @@
+
+body {
+    font-family: -apple-system, sans-serif;
+    color: hsl(0, 0%, 10%);
+    background: hsl(0, 0%, 96%);
+    margin: 0;
+}
+
+a:link,
+a:visited,
+details summary {
+    text-decoration: none;
+    color: hsl(201, 70%, 40%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/* header */
+
+header {
+    text-align: center;
+    padding: 32px;
+    margin: 0;
+}
+header img {
+    width: 400px;
+    max-width: 80%;
+}
+header::after {
+    /* rounded border */
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.1;
+    border-radius: 3px;
+    height: 6px;
+}
+
+
+
+/* main */
+
+main {
+    line-height: 1.6;
+    padding: 1em 5%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main > section {
+    margin: 5em auto;
+}
+main > section > section {
+    margin-bottom: 3em;
+}
+main h2 {
+    font-size:160%;
+    font-weight: 300;
+    color: hsla(0, 0%, 0%, 0.5);
+    
+    text-align: center;
+}
+main h3 {
+    font-size: 120%;
+    color: hsla(0, 0%, 0%, 0.5);
+    
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 90%;
+    margin-top: 6em;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
+
+
+/* ------------------------ */
+
+/* tagline */
+p.tagline {
+    font-size: 130%;
+    color: hsl(201, 70%, 40%);
+    text-align: center;
+}
+p.tagline em {
+    font-size: 114%;
+    font-weight: 600;
+    background-color: hsl(48, 100%, 50%);
+}
+p.tagline + h2 {
+    margin-top: 2em;
+}
+
+
+/* Principle */
+#Topics ul li {
+    list-style-type: "✔︎ ";
+    padding-inline-start: 0.5em;
+}
+#Topics ul li::marker {
+    color: hsl(48, 100%, 50%);
+}
+
+#TalkTypes .container {
+    display: flex;
+    justify-content: space-between;
+}
+#TalkTypes section {
+    flex-basis: 50%;
+    padding: 1em;
+    border-radius: 0.8em;
+    background-color: hsla(198,100%,50%, 0.1);
+}
+#TalkTypes section * {
+    margin: 0;
+}
+#TalkTypes section h4 {
+    font-size: 120%;
+    font-weight: 500;
+    color: hsl(201, 50%, 30%);
+    margin: 0 0 0.2em;
+}
+#TalkTypes section h4 small {
+    font-weight: normal;
+    font-size: 90%;
+    opacity: 0.67;
+}
+#TalkTypes section p {
+    text-indent: 1em;
+}
+#TalkTypes .or {
+    flex-shrink: 2;
+    align-self: center;
+    padding: 0 0.5em;
+    
+    font-size: 180%;
+    font-weight: 100;
+    font-style: italic;
+    color: hsla(0, 0%, 0%, 0.3);
+    vertical-align: middle;
+}
+
+
+/* Events */
+
+.event dl.info {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.event dl.info dt {
+    margin-bottom: 0.2em;
+    color: hsl(0, 0%, 50%);
+    float: left;
+    width: 4em;
+    text-align: right;
+}
+.event dl.info dd {
+    margin-bottom: 0.2em;
+    margin-left: 4.8em;
+}
+.event dl.info dd:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+table.timetable {
+    min-width: 25em;
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+table.timetable caption {
+    text-align: left;
+    font-weight: 500;
+    padding: 0.2em;
+}
+table.timetable tr {
+    border-top:    0.5px solid hsla(0, 0%, 0%, 0.3);
+    border-bottom: 0.5px solid hsla(0, 0%, 0%, 0.3);
+}
+table.timetable td {
+    vertical-align: top;
+    padding: 0.4em;
+}
+table.timetable strong {
+    font-weight: 500;
+}
+table.timetable img.avatar {
+    width: 28px;
+    border-radius: 50%;
+    vertical-align: middle
+}
+table.timetable td:first-child {
+    color: hsla(0, 0%, 0%, .6);
+    font-weight: 300;
+    padding-right: 1em;
+}
+table.timetable .description {
+    font-size: 90%;
+}
+table.timetable .description > * {
+    margin: 0;
+}
+
+.register {
+    text-align: center;
+    margin: 2em auto;
+}
+.register a {
+    font-size: 120%;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    
+    display: inline-block;
+    border: 2px solid hsl(201, 70%, 40%);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 1.2em;
+    padding: 0.6em 1em;
+}
+
+
+
+/* profile */
+
+#Committee .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profile {
+    width: 30%;
+    min-width: 240px;
+    margin: 0 1.5% 1.5em;
+    position: relative;
+    
+    flex-basis: auto;
+}
+.profile h4 {
+    font-weight: 400;
+    font-size: 120%;
+    letter-spacing: 0.05em;
+    
+    position: absolute;
+    top: 12px;
+    left: 80px;
+    margin: 0;
+}
+.profile img.avatar {
+    width: 64px;
+    border-radius: 40%;
+}
+.profile ul.link {
+    font-size: 84%;
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 44px;
+    left: 72px;
+}
+.profile ul.link li {
+    display: inline;
+    margin: 0 0.1em;
+}
+.profile ul.link li+li::before {
+    content: ' / ';
+    font-weight: 200;
+    color: hsla(0, 0%, 0%, 0.2);
+}
+.profile p {
+    font-size: 90%;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#Support {
+    text-align: center;
+}
+#Support img {
+    border-radius: 15%;
+}
