@@ -5,7 +5,7 @@
 <style type="text/css">
 	#Logo .letter,
 	.human  { fill:hsl(198,74%,53%); }
-	.tool   { fill:hsl(20,67%,55%); }
+	.tool   { fill:hsl(15,67%,55%); }
 	.wifi   { stroke:hsl(198,74%,53%); opacity: 0.5; fill:none;
 	          stroke-width:4.2; stroke-linecap:round; }
 	

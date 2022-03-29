@@ -67,7 +67,7 @@ main h2 {
     text-align: center;
 }
 main h3 {
-    font-size: 120%;
+    font-size: 130%;
     color: hsla(0, 0%, 0%, 0.5);
     
     text-align: center;
@@ -83,6 +83,50 @@ footer {
     color: hsla(0, 0%, 0%, 0.5);
 }
 
+
+/* profile */
+
+.profile {
+    position: relative;
+}
+.profile h4 {
+    font-weight: 400;
+    font-size: 120%;
+    letter-spacing: 0.05em;
+    
+    position: absolute;
+    top: 0.2em;
+    left: 3.6em;
+    margin: 0;
+}
+.profile img.avatar {
+    width: 3.5em;
+    border-radius: 45%;
+}
+.profile ul.link {
+    font-size: 90%;
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2.3em;
+    left: 4.5em;
+}
+.profile ul.link li {
+    display: inline;
+    margin: 0 0.1em;
+}
+.profile ul.link li+li::before {
+    content: ' / ';
+    font-weight: 200;
+    color: hsla(0, 0%, 0%, 0.2);
+}
+.profile p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
 
 
 /* ------------------------ */
@@ -199,11 +243,14 @@ table.timetable td {
 table.timetable strong {
     font-weight: 500;
 }
-table.timetable img.avatar {
-    width: 28px;
-    border-radius: 50%;
-    vertical-align: middle
+table.timetable .description {
+    margin-bottom: 1em;
+    
 }
+table.timetable .profile p {
+    text-align: left;
+}
+
 table.timetable td:first-child {
     color: hsla(0, 0%, 0%, .6);
     font-weight: 300;
@@ -226,11 +273,21 @@ table.timetable .description > * {
     line-height: 1;
     
     display: inline-block;
-    border: 2px solid hsl(201, 70%, 40%);
+    color: white;
+    background-color: hsl(0, 0%, 70%);
     margin-left: auto !important;
     margin-right: auto !important;
     border-radius: 1.2em;
     padding: 0.6em 1em;
+}
+.register a:link,
+.register a:visited {
+    background-color: hsl(15,67%,55%);
+}
+.register a:hover {
+    background-color: hsl(15,80%,64%);
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 
@@ -242,53 +299,15 @@ table.timetable .description > * {
     justify-content: center;
     flex-wrap: wrap;
 }
-.profile {
+#Committee .profile {
     width: 30%;
     min-width: 240px;
     margin: 0 1.5% 1.5em;
-    position: relative;
     
     flex-basis: auto;
 }
-.profile h4 {
-    font-weight: 400;
-    font-size: 120%;
-    letter-spacing: 0.05em;
-    
-    position: absolute;
-    top: 12px;
-    left: 80px;
-    margin: 0;
-}
-.profile img.avatar {
-    width: 64px;
-    border-radius: 40%;
-}
-.profile ul.link {
-    font-size: 84%;
-    
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 44px;
-    left: 72px;
-}
-.profile ul.link li {
-    display: inline;
-    margin: 0 0.1em;
-}
-.profile ul.link li+li::before {
-    content: ' / ';
-    font-weight: 200;
-    color: hsla(0, 0%, 0%, 0.2);
-}
-.profile p {
+#Committee .profile p {
     font-size: 90%;
-    text-align: justify;
-    line-height: 1.5;
-    margin: 0;
-}
 
 #Support {
     text-align: center;
