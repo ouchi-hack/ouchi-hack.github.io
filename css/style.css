@@ -253,7 +253,9 @@ table.timetable span.talkType {
 }
 table.timetable .description {
     margin-bottom: 1em;
-    
+}
+table.timetable .slides {
+    margin: 15px 0;
 }
 table.timetable .profile p {
     text-align: left;
